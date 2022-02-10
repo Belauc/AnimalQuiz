@@ -13,6 +13,10 @@
 		A537596327466F6D00C87F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A537596127466F6D00C87F89 /* Main.storyboard */; };
 		A537596527466F7600C87F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A537596427466F7600C87F89 /* Assets.xcassets */; };
 		A537596827466F7700C87F89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A537596627466F7700C87F89 /* LaunchScreen.storyboard */; };
+		A537597D274688DF00C87F89 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537597C274688DF00C87F89 /* QuestionViewController.swift */; };
+		A537598027468F1900C87F89 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A537597F27468F1900C87F89 /* FinalViewController.swift */; };
+		A55D1A48275278E7001B356C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D1A47275278E7001B356C /* Question.swift */; };
+		A55D1A4B275278F8001B356C /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55D1A4A275278F8001B356C /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A537596427466F7600C87F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A537596727466F7700C87F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A537596927466F7700C87F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A537597C274688DF00C87F89 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		A537597F27468F1900C87F89 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		A55D1A47275278E7001B356C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A55D1A4A275278F8001B356C /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		A537595A27466F6D00C87F89 /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				A537595B27466F6D00C87F89 /* AppDelegate.swift */,
-				A537595D27466F6D00C87F89 /* SceneDelegate.swift */,
-				A537595F27466F6D00C87F89 /* ViewController.swift */,
-				A537596127466F6D00C87F89 /* Main.storyboard */,
-				A537596427466F7600C87F89 /* Assets.xcassets */,
-				A537596627466F7700C87F89 /* LaunchScreen.storyboard */,
-				A537596927466F7700C87F89 /* Info.plist */,
+				A53759762746725300C87F89 /* Resources */,
+				A53759752746723100C87F89 /* Models */,
+				A53759742746721B00C87F89 /* ViewControllers */,
+				A5375971274671B000C87F89 /* Supporting Files */,
+				A5375970274670DA00C87F89 /* Storyboards */,
 			);
 			path = AnimalQuiz;
+			sourceTree = "<group>";
+		};
+		A5375970274670DA00C87F89 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A537596127466F6D00C87F89 /* Main.storyboard */,
+				A537596627466F7700C87F89 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A5375971274671B000C87F89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A537596927466F7700C87F89 /* Info.plist */,
+				A537595B27466F6D00C87F89 /* AppDelegate.swift */,
+				A537595D27466F6D00C87F89 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A53759742746721B00C87F89 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A537595F27466F6D00C87F89 /* ViewController.swift */,
+				A537597C274688DF00C87F89 /* QuestionViewController.swift */,
+				A537597F27468F1900C87F89 /* FinalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A53759752746723100C87F89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A55D1A47275278E7001B356C /* Question.swift */,
+				A55D1A4A275278F8001B356C /* Answer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A53759762746725300C87F89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A537596427466F7600C87F89 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A537598027468F1900C87F89 /* FinalViewController.swift in Sources */,
 				A537596027466F6D00C87F89 /* ViewController.swift in Sources */,
 				A537595C27466F6D00C87F89 /* AppDelegate.swift in Sources */,
+				A55D1A4B275278F8001B356C /* Answer.swift in Sources */,
+				A55D1A48275278E7001B356C /* Question.swift in Sources */,
+				A537597D274688DF00C87F89 /* QuestionViewController.swift in Sources */,
 				A537595E27466F6D00C87F89 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +344,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PWUQFV6CQT;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +364,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PWUQFV6CQT;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
